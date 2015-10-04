@@ -1,0 +1,614 @@
+@import "bourbon/bourbon.scss";
+@mixin create-theme (
+	$color1, 
+	$color2: #001, 
+	$color3: #fff,
+	$color4: #fff 
+	){
+
+	// *****************************************************************************
+	// Principales - responsive
+	// *****************************************************************************
+	
+	header{ background: $color1; }
+
+	
+	.shadow{
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.3),inset rgba(0,0,0,0.12) 0 -0px 0,rgba(0,0,0,0.3) 0 1px 2px,$color1 0 1px 10px;
+	}
+
+	// *****************************************************************************
+	// Otros elementos
+	// *****************************************************************************
+	
+	.btn-primary{
+		background: $color1;
+
+		&:hover, &:active, &.active { background: $color3; }
+
+		&.color-4{
+			background: $color4;
+			&:hover, &:active, &.active { background: #fff;color: $color4;border-color: $color4}
+		}
+
+		&.color-3{
+			background: $color3;
+			color: #fff;
+			&:hover, &:active, &.active { background:#fff;color: $color3;border-color: $color3}
+		}
+
+		&.color-1{
+			background: $color1;
+
+			&:hover, &:active, &.active {
+			 	background: #fff;color: $color1;border-color: $color1;
+
+				path{
+					
+					fill: $color1;
+				}
+			}
+		}
+
+		&.color-2{
+			background: $color2;
+			color: #fff;
+			&:hover, &:active, &.active { background:#fff;color: $color2;border-color: $color2}
+		}
+	}
+
+
+	.navbar-default {
+	  background-color: transparent;
+	  border-color: transparent;
+
+	  &.bottom{
+
+	  	background-color: $color3;
+	  	border-color: $color3;
+
+
+	  	ul{
+	  		li{
+
+			  	a{
+			  		padding: 5px 15px;
+			  		min-height: 50px;
+		  			color: white;
+		  			
+		  			&:hover{
+
+		  				color: $color1!important;
+		  			}
+
+		  			
+		  		}
+
+		  		&.active{
+
+		  			a{
+		  				color: $color1!important;
+			  			background-color: transparent;
+		  			}
+		  		}
+	  		}
+	  	}
+
+
+	  }
+
+	  	.navbar-nav{
+
+	  		a{
+
+	  			color: white;
+	  			
+	  			&:hover{
+
+	  				color: $color3!important;
+			  		background-color: transparent;
+	  			}
+
+	  			
+	  		}
+
+
+
+		  	.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+			  color: $color3!important;
+			  background-color: rgba(0, 0, 0, 0.5);
+			}
+	  	}
+
+		
+	}
+
+	.btn-default{
+
+		.badge{
+
+			background: $color1
+		}
+
+		&:hover{
+
+			.badge{
+
+				background: #fff;
+				color: $color1;
+			}
+
+		}
+	}
+
+	.pager{
+
+		.next,.previous{
+
+			&.disabled{
+
+				a{
+					opacity: 0.3;
+					&:hover{
+
+						border-color: #ddd;
+						background: transparent; ;
+						color: $color1;
+					}
+				}
+
+			}
+
+			a{
+				
+				color: $color1;
+
+				&:hover{
+
+					border-color: $color1;
+					background:$color1 ;
+					color: #fff;
+
+				}
+			}
+			
+		}
+
+		.page-num{
+
+			&:hover{
+				border-color: $color1;
+				background:$color1 ;
+				color: #fff;
+			}
+
+			&.active{
+
+				color: #fff;
+				background: $color2;
+			}
+
+
+		}
+	}
+
+	.typehead-primary-container{
+
+		&.blue{
+
+			&:after{
+
+			
+				background: $color1;
+				color: $color1;
+				opacity: 0.5;
+
+				
+			}
+
+			.typehead-primary{
+
+				color:$color1!important;
+
+				
+			}
+		}
+
+		&.green{
+
+			&:after{
+
+			
+				background: $color3;
+				color: $color3;
+				opacity: 0.5;
+				
+
+				
+			}
+
+			.typehead-primary{
+
+				color:$color3!important;
+				&:focus { border-color: $color1;box-shadow: inset 0 1px 1px $color3,0 0 8px $color3}
+				
+			}
+		}
+
+	}
+
+	md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
+	  border-right-color: $color1!important;
+	}
+
+	md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle {
+	  border-top-color: $color1!important;
+	}
+
+	md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle{
+		  border-left-color: $color1!important;
+	}
+
+	md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle{
+		border-top-color: $color1!important;
+	}
+
+	md-radio-button.md-default-theme.md-checked .md-off {
+	  border-color: $color2!important;
+	}
+
+	md-radio-button.md-default-theme .md-on {
+	  background-color: $color2!important;
+	}
+
+	md-checkbox.md-default-theme.md-checked .md-icon {
+	  background-color: $color2;
+	}
+
+	input,select,textarea{
+
+		&.form-control{
+
+			&:focus { background: rgba(0, 0, 0, 0.4);border-color: $color1;box-shadow: inset 0 1px 1px $color1,0 0 8px $color1}
+		}
+
+		&.white{
+			color: $color1;
+			&:focus { color: white;background: $color1 ;border-color: $color1;box-shadow: inset 0 1px 1px $color1,0 0 8px $color1}
+		}
+	}
+
+	.input-primary{ border-color: $color1; }
+	
+	h3,h2,h1{
+		strong{
+
+			color: $color1;
+		}
+	}
+	
+	strong1{
+
+		color: $color1;
+	}
+
+	strong2{
+
+		color: $color2;
+	}
+
+	strong4{
+
+		color: $color4;
+	}
+	strongw{
+
+		color: white!important;
+	}
+
+	.user-menu{
+
+		a{
+			&:hover{
+
+				background: $color1!important;
+				color: #fff;
+			}
+		}
+	}
+
+	.callout-2{
+
+		border-left-color: $color2;
+	}
+
+
+
+	// *****************************************************************************
+	// Clases útiles
+	// *****************************************************************************
+	.bd-1 { border-color: $color1 !important; }
+	.bd-2 { border-color: $color2 !important; }
+	.bd-3 { border-color: $color3 !important; }
+	.bd-4 { border-color: $color4 !important; }
+	.bd-W { border-color: #fff !important; }
+	.bd-disabled { border-color: #B3B3B3 !important; }
+	.bc-bottom-1{ border-bottom-color: $color1 !important;}
+	.bg-1 { background-color: $color1 !important; }
+	.bg-W {background: #fff!important}
+	.bg-silver2 {background: #f5f4f4!important}
+	.bg-2 { background-color: $color2 !important; }
+	.bg-3 { background-color: $color3 !important; }
+	.bg-4 { background-color: $color4 !important; }
+	.bg-blue { background-color: #5F76A5!important; }
+	.bg-green{ background: #BAD770!important}
+	.bg-gray{ background: #99A9AD!important;}
+	.bg-Dark{ background: #0d2555!important;}
+	.hover-4{&:hover{background-color: $color2 !important;}}
+	.bs-3 { box-shadow: $color3 !important; }
+	.fc-1 { color: $color1 !important; }
+	.fc-2 { color: $color2 !important; }
+	.fc-3 { color: $color3 !important; }
+	.fc-4 { color: $color4 !important; }
+	.fs-18 {font-size: 18px}
+	.fs-20 {font-size: 20px}
+	.fs-23 {font-size: 23px}
+	.fill-1{ fill: $color1;}
+	.ul-4{
+		li{
+
+			color: $color4
+		}
+	}
+
+	.border-color-R{border-color: transparent transparent transparent $color1;}
+	.border-color-L{border-color: transparent $color1 transparent transparent;}
+	.border-color-B{border-color: $color1 transparent transparent transparent;}
+	.border-color-T{border-color: transparent transparent $color1 transparent;}
+
+	.hover-bg-1{
+
+		&:hover{
+			background-color: $color1 !important;
+		}
+	}
+
+	.hover-bg-3{
+			transition: all 0.3s;
+
+		&:hover{
+			background-color: $color3 !important;
+			transition: all 0.3s;
+
+		}
+	}
+
+	.hover-fc-3{
+			transition: all 0.3s;
+
+		&:hover{
+			color: $color3!important;
+			transition: all 0.3s;
+
+		}
+	}
+
+	.hover-fc-4{
+			transition: all 0.3s;
+
+		&:hover{
+			color: $color4!important;
+			transition: all 0.4s;
+
+		}
+	}
+
+	.item-selectable{
+		&.is-selected{ box-shadow: 0px 0px 0px 5px $color2!important;background-color: $color3 !important;}
+	}
+
+	.item-is-selected{
+		box-shadow: 0px 0px 0px 5px $color2!important;
+
+	}
+
+	.popover {
+			background: $color1;
+
+			&.top{
+				:after{
+					border-top-color: $color1;
+				}
+			}
+
+			&.left{
+				:after{
+					border-left-color: $color1;
+				}
+			}
+
+			&.right{
+				:after{
+					border-right-color: $color1;
+				}
+			}
+
+			&.bottom{
+				:after{
+					border-bottom-color: $color1;
+				}
+			}
+	}
+
+	.carousel-indicators{
+
+		.active{
+			background-color: $color1;
+			border-color: $color1;
+		}
+	}
+
+	#carousel-prod{
+
+		.carousel-indicators{
+
+			.active{
+				background-color: white;
+				border-color: white;
+			}
+		}
+
+
+	}
+
+
+	.btn-default{
+
+		color: $color1;
+		
+
+		&:hover{
+
+			background: $color1;
+			border-color: $color1;
+			color: #fff; 
+			
+		}
+
+		&:focus{
+
+			color: $color1;
+
+			&:hover{
+
+				color: white;
+			}
+			
+		}
+	}
+
+	.btn-circle{
+
+		color: $color1;
+	}
+
+	.page-header {
+		border-bottom: 0px solid $color1;
+	}
+
+	.social-item-circle{
+
+		background: $color1;
+	}
+
+	/* Effect 5 */
+
+	.hi-icon-effect-5 .hi-icon {
+		box-shadow: 0 0 0 4px white;
+		color: white;
+	}
+	.hi-icon-effect-5 .hi-icon:hover {
+		background: $color1;
+		color: white;
+		box-shadow: 0 0 0 8px rgba(255, 192, 0, 0.3);
+		text-decoration: none;
+	}
+	
+	
+	.bs-callout {
+		
+		border: 1px solid $color1;
+
+		&.bs-callout-down{
+
+			border-bottom: 5px solid $color1;
+		}
+	}
+
+
+	// *****************************************************************************
+	// Tabla
+	// *****************************************************************************
+	
+
+	// *****************************************************************************
+	// animaciones
+	// *****************************************************************************
+	.fade_in_easy{
+		@include animation(fadeIn 0.3s ease-in);
+	}
+
+	.easy_in{
+		@include animation(easy_in 0.3s ease-in);
+	}
+
+	@include keyframes(fadeIn){
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+	@include keyframes(easy_in){
+		0% {
+			opacity: 0;
+		}
+		50% {
+			@include transform(translate(0px, calc(0% + 120px)));
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	// *****************************************************************************
+	// Vistas
+	// *****************************************************************************
+	
+	.slidesjs-navigation{
+		background-color: $color1;
+		&:hover{
+		background-color: $color2;	
+		}
+	}
+	
+		
+}
+
+// -------------------------------------------------------------------------
+// clases 
+// -------------------------------------------------------------------------
+.theme1{	
+	@include create-theme(
+		#47A6C7,
+		#94c11f, 
+		#1A6F89,
+		#1B8FBB
+	); 
+}
+
+.theme2{	
+	@include create-theme(
+		#E6344A,
+		#04779B,
+		#0B5379,
+		#FBB351
+	); 
+}
+
+.theme3{	
+	@include create-theme(
+		#95a5a6,
+		#e67e22, 
+		#d35400,
+		#f1c40f
+	); 
+}
+
+.theme4{	
+	@include create-theme(
+		#9b59b6,
+		#e74c3c, 
+		#c0392b,
+		#3cd27b
+	); 
+}

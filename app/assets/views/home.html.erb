@@ -1,0 +1,315 @@
+<div class="line-height-0" data-sr-container='{ "reset":true, "vFactor": 0.10, "mobile": true }' >
+<section class="video-panel">
+	<nav class="navbar navbar-default navbar-fixed-top animation-all"  data-sr="enter top please, and hustle 200px no reset">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <div class="wid-100">
+            <img ng-click="goTo('/NaN')" class="img-responsive logo-navbar float-left" src="img/logoAlpha2015White.png">
+	      	<h4 class="menu-selected fc-3">[[menusListSelected]]</h4>
+          </div>
+	    </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav col-lg-10 col-md-12 col-sm-12 col-xs-12 float-right">
+	       	<li class="nav-top-li [[activeMenu === 2 ? 'active' : '']]"><a scroll-to="query">Ver<br class="hidden-xs"> seminarios<span class="sr-only">(current)</span></a></li>
+	       	<li class="nav-top-li [[activeMenu === 4 ? 'active' : '']]"><a scroll-to="whatIs">Conocer <br class="hidden-xs"> más<span class="sr-only">(current)</span></a></li>
+	       	<li class="nav-top-li [[activeMenu === 3 ? 'active' : '']]"><a scroll-to="contact" href="">Contactenos<span class="sr-only">(current)</span></a></li>
+		    <li class="nav-top-li center-items margin-t-10" ng-click='showModalLogin()' data-backdrop="static" data-toggle="modal" data-target="#modalLogin">
+				<a><button class="btn btn-primary btn-md text-center color-2 bd-2" >Iniciar sesión</button></a>
+			</li>
+			<li class="nav-top-li center-items margin-t-10" ng-click='showModalSignup()' data-backdrop="static" data-toggle="modal" data-target="#modalSignup">
+				<a><button class="btn btn-primary btn-md text-center color-4 bd-4">Registrarse</button></a>
+			</li>
+          	<a id="showModalRemember" class="fc-W hover-fc-3 hidden"data-backdrop="static" data-toggle="modal" data-target="#modalRemember" >Link oculto</a>
+	  	</ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<header id="header">
+		<div class="video-overlay"></div>
+		<video autoplay="" loop="" muted="">
+			<source src="img/footage.mp4" type="video/mp4">
+			<source src="img/footage.webm" type="video/webm">
+			<source src="img/footage.ogv" type="video/ogv">
+		</video>
+	</header>
+	<div class="header-content">
+	<div class="wid-100 center-items">
+		<div class="col-md-6"  data-sr="enter top please, and hustle 200px no reset">
+			<img ng-click="goTo('/NaN')" class="img-responsive logo-navbar float-left" src="img/logoAlpha2015White.png">
+		</div>
+	</div>
+	<h1>Aqui encontraras el conocimiento en tecnologia que Necesitas</h1>
+	<h2>Seminarios totalmente gratis!</h2>
+	<h4>Más de <button scroll-to="lawyers" class="btn btn-primary text-center color-2 bd-2" >100 predicadores </button> dispuestos a compartir su conocimiento</h4>
+	<div class="wid-100 center-items">
+	<div class="col-md-5 center-items margin-t-10" scroll-to="whatIs" >
+		<button class="wid-100 btn btn-primary btn-md text-center color-1 bd-1" >Conocer más de CominidadAlpha.co</button>
+	</div>
+	</div>
+	</div>
+</section>
+<!-- panel ¿QUE ES? -->
+<section id="whatIs" class="padding-md-20 padding-sm-15 inline-b no-padding-bottom bg-W over-flow-hidden">
+	<article class="col-md-12 col-xs-12">
+		<div class="wid-100 center-items">
+			<div class="col-md-6">
+				<div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter top please, and hustle 30px over 1s no reset">
+	            	<h2 class="fc-2 fs-50 fs-xs-40">¿Que es?</h2>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter bottom please, and hustle 30px over 1s no reset">
+					<img class="img-responsive" src="img/logoAlpha2015Trans.png"></img>
+				</div>
+			</div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter left please, and hustle 30px over 1s no reset">
+        	<div class="col-md-10">
+        		<h4 class="fc-1 center-text">Es una plataforma creada para reunir a las personas interesadas en aprender más de tecnologia con los "Predicarores" dipuestos a compartir sus conocimientos.</h4>
+        	</div>
+		</div>
+		<div class="col-md-12 col-sm-12 center-items margin-t-30" data-sr="wait 0.1s enter bottom please, and hustle 30px over 1s no reset">
+			<div class="col-md-4 margin-t-10" ng-click='showModalSignup()' data-backdrop="static" data-toggle="modal" data-target="#modalSignup">
+				<button class="wid-100 btn btn-default btn-md text-center color-1 bd-1" >Registrarse es facil y rapido!</button>
+			</div>
+		</div>
+		<article class="col-md-12 center-items margin-t-30">
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-4 icon-l mdi mdi-facebook"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-4 icon-l mdi mdi-instagram"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-4 icon-l mdi mdi-twitter"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-4 icon-l mdi mdi-youtube-play"></i></a></div>
+		</article>
+	</article>
+	<article class="col-md-12 padding-b-50" >
+		<div class="col-md-12">
+			<div ng-repeat="item in advantages" class="team-card col-md-4 col-xs-12 padding-t-b-10-auto" data-sr="wait 0.[[$index + 1]]s enter bottom please, and hustle 30px over 1s no reset">
+				<div class="wid-100 team-card-content">
+					<div class="wid-100 center-items">
+						<div class="wid-100">
+							<img class="img-responsive" src="[['img/' + item.img]]"></img>
+						</div>
+					</div>
+					<div class="wid-100 center-items">
+						<div class="wid-80 advantage-content">
+							<h2 class="fc-4">[[item.title]]</h2>
+							<h3 class="fc-G">[[item.text]]</h3>
+							<p class="fc-G">[[item.description]]</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</article>
+</section>
+<!-- Fin panel ¿QUE ES? -->
+<!-- panel CONTACTO -->
+<section id="query">
+	<div class="wid-100 over-flow-hidden position-relative" id="contacto">
+	    <!-- Content Row -->
+        <!-- Map Column -->
+        <div class="wid-100 google-maps-container">
+            <!-- fondo -->
+            <img class="img-index-module filter-blur" src="img/seminarios.jpg"></img>
+        </div>
+        <!-- /.row -->
+        <div class="position-absolute wid-100" style="top: 0;">
+    	<div class="overlay-index-module" style="z-index:1;"></div>
+
+        <!-- Contact Details Column -->
+        <div class="col-md-12 padding-md-20 padding-sm-15 padding-xs-t-100" style="z-index:2;">
+        	<div class="wid-100 center-items">
+				<div class="col-md-10">
+					<div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter top please, and hustle 30px over 1s no reset">
+		            	<h2 class="fc-W fs-50 fs-xs-40 text-center">Estos son algunos de los seminarios disponibles.</h2>
+					</div>
+					
+				</div>
+	        </div>
+            <!-- seminarios -->
+            <div class="wid-100">
+			<carousel interval="myInterval" no-wrap="noWrapSlides">
+		      <slide ng-repeat="slide in filteredSeminars" active="slide.active">
+		        <div ng-repeat="item in slide" class="seminar-card col-md-2 col-xs-12 padding-t-b-10-auto">
+		        	<div class="truncate-container height-300 bg-W">
+						<div class="wid-100">
+							<img class="img-responsive" src="[['img/' + item.img]]"></img>
+						</div>
+						<div class="col-md-12">
+							<div class="wid-100">
+								<h2 class="fc-4">[[item.title]]</h2>
+								<h3 class="fc-G">[[item.place]] - [[item.hour]]</h3>
+								<p>[[item.text]]</p>
+							</div>
+						</div>
+		        	</div>
+				</div>
+		      </slide>
+		    </carousel>
+        </div>
+        <!-- /.row -->
+    	</div>
+	</div>
+</section>
+<!-- fin panel CONTACTO -->
+<!-- panel ¿QUE ES? -->
+<section id="lawyers" class="padding-md-20 padding-sm-15 inline-b bg-3 over-flow-hidden">
+	<article class="col-md-12 col-xs-12">
+		<div class="wid-100 center-items">
+			<div class="col-md-8">
+				<div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter top please, and hustle 30px over 1s no reset">
+	            	<h2 class="fc-W fs-50 fs-xs-40 text-center">Ellos son nuestros Predicadores destacados.</h2>
+				</div>
+				
+			</div>
+        </div>
+		<div class="wid-100">
+			<carousel interval="myInterval" no-wrap="noWrapSlides">
+		      <slide ng-repeat="slide in filteredPreachers" active="slide.active">
+		        <div ng-repeat="item in slide" class="team-card col-md-4 col-xs-12 padding-t-b-10-auto">
+					<div class="wid-100 preacher-card-content truncate-container">
+						<div class="cover-blur">
+							<img  src="[['img/' + item.img]]"></img>
+						</div>
+						<div class="col-md-12 center-items">
+							<div class="wid-50">
+								<img class="img-responsive border-radius margin-t-15 border-3px bd-W" src="[['img/' + item.img]]"></img>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="wid-100">
+								<h2 class="fc-4">[[item.name]]</h2>
+								<h3 class="fc-G">[[item.text]]</h3>
+								<p class="fc-G">[[item.description]]</p>
+								<article class="wid-100 center-items margin-plus float-left">
+									<div class="wid-50">
+										<div class="col-md-3 col-sm-3 col-xs-3"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-facebook"></i></a></div>
+										<div class="col-md-3 col-sm-3 col-xs-3"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-instagram"></i></a></div>
+										<div class="col-md-3 col-sm-3 col-xs-3"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-twitter"></i></a></div>
+										<div class="col-md-3 col-sm-3 col-xs-3"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-youtube-play"></i></a></div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+		      </slide>
+		    </carousel>
+        </div>
+	</article>
+</section>
+<!-- Fin panel ¿QUE ES? -->    
+<!-- panel CONTACTO -->
+<section id="contact">
+	<div class="wid-100 over-flow-hidden position-relative" id="contacto">
+	    <!-- Content Row -->
+        <!-- Map Column -->
+        <div class="wid-100 google-maps-container">
+            <!-- Embedded Google Map -->
+            <iframe width="100%" class="filter-blur" height="664px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.022146518516!2d-75.5896279!3d6.2608129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442911b7cd3737%3A0x1dfcdbe37ab6862d!2sCalle+51+%23+73-70%2C+Medell%C3%ADn%2C+Antioquia%2C+Colombia!5e0!3m2!1ses!2ses!4v1423949350356"></iframe>
+        </div>
+        <!-- /.row -->
+        <div class="position-absolute wid-100" style="top: 0;">
+    	<div class="overlay-index-module" style="z-index:1;"></div>
+
+        <!-- Contact Details Column -->
+        <div class="col-md-12 padding-md-20 padding-sm-15" style="z-index:2;">
+        	<div class="wid-100 center-items">
+				<div class="col-md-6">
+					<div class="col-md-12 col-sm-12 col-xs-12 center-items" data-sr="wait 0.1s enter top please, and hustle 30px over 1s no reset">
+		            	<h2 class="fc-1 fs-50 fs-xs-40">Puedes Contactarnos.</h2>
+					</div>
+					
+				</div>
+	        </div>
+        	<div class="col-md-5 col-sm-5 block-contact-form" data-sr="wait 0.1s enter left please, and hustle 30px over 1s no reset" >
+                <h3 class="fc-1" >Detalles de contacto </h3>
+                <p>
+                    Comunidad Alpha.<br>Calle 35 # 73 - 65<br>Medellín, Antioquia Colombia
+                </p>
+                <p><i class="mdi mdi-cellphone-iphone"></i><abbr title="Phone"> Telefono</abbr>: +57 301 356 61 26</p>
+                <p><i class="fa fa-envelope-o"></i> 
+                    <span class="glyphicon glyphicon-envelope"></span><abbr title="Email"> E-mail</abbr>: <a class="fc-1">contacto@comunidadalpha.com</a>
+                </p>
+                <p><i class="mdi mdi-clock"></i><abbr title="Hours"> Horario</abbr>: Lunes - Viernes: 8:00 AM a 6:00 PM</p>
+            </div>      
+            <!-- formulario de contacto -->
+            <!-- para ejecutar este formulario se requiere el archivo php/contact_me.php -->
+            <div class="row block-contact-form no-margin" data-sr="wait 0.1s enter right please, and hustle 30px over 1s no reset"  style="z-index:2;" >
+                <div class="col-md-7 col-sm-7">
+                    <h3 class="fc-1">Dejanos tu Mensaje</h3>
+                    <form  id="contactForm" onSubmit= "validateForm(this); return false" >
+                    	<div class="form-group col-lg-6 col-sm-6 col-xs-12">
+			            	<input ng-model="form.name" type="text" class="form-control" id="name" placeholder="*Ingrese su nombre completo.">
+			          	</div>
+			          	<div class="form-group col-lg-6 col-sm-6 col-xs-12">
+			            	<input ng-model="form.phone" type="phone" class="form-control" id="phone" placeholder="*Ingrese su número de teléfono.">
+			          	</div>
+			          	<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+			            	<input ng-model="form.email" type="text" class="form-control" id="email" placeholder="*Ingrese su correo electrónico.">
+			          	</div>
+			          	<div class="form-group col-lg-12 col-sm-12 col-xs-12">
+			          		<textarea rows="4" cols="100" ng-model="form.message" type="text" class="form-control" id="message"  placeholder="*Ingrese su mensaje." maxlength="999"></textarea>
+			          	</div>
+                        <div class="col-md-12">
+                        	<div id="success"></div>
+                    	</div>
+                        <!-- For success/fail messages -->
+                        <div class="col-md-12 ">
+                        	<button class="btn btn-primary btn-md text-center color-1 bd-1 float-right"> Envíar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+        	</div>
+        <!-- /.row -->
+    	</div>
+	</div>
+    </section>
+    <!-- fin panel CONTACTO -->
+<a id="backTop" class="back-to-top bg-1" scroll-to="header"><i class="fc-W pointer mdi mdi-chevron-up"></i></a>
+<footer id="footer" class="bg-1">
+
+	<div data-sr="enter bottom please, and hustle 10px over 1s no reset" class="col-md-6 col-sm-12 col-xs-12 float-left inlineb margin-t-30">
+		<nav class="wid-100">
+				<div class="col-md-3 col-sm-3 col-xs-12 float-left center-items" ng-click="goTo('/da')"><a href=""><p>Home</p></a></div>
+				<div class="col-md-3 col-sm-3 col-xs-12 float-left center-items"><a href=""><p>Quienes somos</p></a></div>
+				<div class="col-md-3 col-sm-3 col-xs-12 float-left center-items"><a href=""><p>FAQ</p></a></div>
+				<div class="col-md-3 col-sm-3 col-xs-12 float-left center-items" ng-click="goTo('/login')"><a href=""><p>Iniciar sesión</p></a></div>
+		</nav>
+	</div>
+
+	<div data-sr="wait 0.5s enter bottom please, and hustle 10px over 1s no reset" class="col-md-6 col-sm-12 col-xs-12 float-left inlineb">
+		<div class="col-md-6 col-md-6 col-xs-12 center-text margin-t-30 float-left ">
+		  <p class="fs-15 fc-W">Síguenos en nuestras redes sociales</p>
+		</div>
+		<article class="col-md-6 col-md-6 col-xs-12 center-items margin-plus float-left">
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-facebook"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-instagram"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-twitter"></i></a></div>
+				<div class="icon-social"><a target="_blank"href=""><i class="fc-1 pointer mdi mdi-youtube-play"></i></a></div>
+		</article>
+	</div>
+
+
+</footer>
+</div>
+
+<!-- Ventana emergente para iniciar sesion-->
+<div ng-if="modalLoginShow">
+  <div data-modal-login></div>
+</div>
+
+<!-- Ventana emergente para registrarse-->
+<div ng-if="modalSignupShow">
+  <div data-modal-signup></div>
+</div>
+
+<!-- Ventana emergente para registrarse-->
+<div ng-if="modalRememberShow">
+  <div data-modal-remember></div>
+</div>
