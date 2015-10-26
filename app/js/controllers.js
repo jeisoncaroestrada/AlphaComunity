@@ -1,11 +1,19 @@
 angular.module("Alpha")
-.controller('LoginCtrl',function($scope,$http,$location,$rootScope,$sce,$timeout,$window){
+.controller('LoginCtrl',function($scope,$http,$location,$rootScope,$sce,$timeout,$window,botiFactory){
 
 	$scope.sessionMessage = false;
 	$scope.success = false;
 	$scope.form = {
-		user: '',
-		password: '',
+		name: 'Jeison',
+		address: 'la funlam',
+		phone: '12345'
+	}
+
+	$scope.loginNew = function () {
+		console.log('german');
+		botiFactory.save({ store: $scope.form}, function () {
+		 $scope.form = "";
+		});
 	}
 
 	angular.element($window).bind('resize', function() {
@@ -350,7 +358,7 @@ angular.module("Alpha")
 
 })
 
-.controller('HomeCtrl',function($scope,$http,$location,$rootScope,$window,$timeout,$sce){
+.controller('HomeCtrl',function($scope,$http,$location,$rootScope,$window,$timeout,$sce, botiFactory){
 
 	angular.element($window).bind('resize', function() {
        	$rootScope.windowHeight = $window.innerHeight;
@@ -362,6 +370,49 @@ angular.module("Alpha")
 
     $( ".video-panel" ).css( "height", $window.innerHeight );
     $( "video" ).css( "margin-left", ($window.innerWidth / 2) -750 );
+
+    $scope.user = {
+		name: 'Jeison',
+		address: 'la funlam',
+		phone: '12345'
+	}
+
+	$scope.newUser = {
+		name1: '',
+		name2: '',
+		lastname1: '',
+		lastname2: '',
+		email: '',
+		address: '',
+		phone: '',
+		password: '',
+		confirm_password: '',
+		//check: false
+	}
+
+	$scope.loginNew = function () {
+		console.log($scope.user);
+		botiFactory.save({ store: $scope.user}, function () {
+		 $scope.user = "";
+		});
+	}
+
+	$scope.signUpNew = function () {
+
+		botiFactory.save({ user: $scope.newUser}, function () {
+		 $scope.newUser = "";
+		});
+
+		/*if (!$scope.newUser.check) {
+
+			$scope.sessionMessage = ['por favor dar click en acepto terminos y condiciones']
+		}else{
+
+			botiFactory.save({ store: $scope.newUser}, function () {
+			 $scope.newUser = "";
+			});
+		};*/
+	}
 
     //array que contiene las caracteristicas de la aplicacion
 	$scope.advantages = [
@@ -394,7 +445,7 @@ angular.module("Alpha")
 	$scope.preachers = [
 
 		{
-			name: "Jhon Doe A.",
+			name: "Jhon Doe Adesf.",
 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.",
 			description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			img: "profile1.jpg",
@@ -437,6 +488,7 @@ angular.module("Alpha")
 		}
 
 	]
+	
 	//array que contiene los seminarios disponibles
 	$scope.seminars = [
 

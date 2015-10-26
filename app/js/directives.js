@@ -34,7 +34,7 @@ Alpha.directive('modalDefault', function ($sce) {
 Alpha.directive('modalLogin', function ($sce) {
     return {
         restrict: 'A',
-        templateUrl: 'views/common/modal_login.html.erb',
+        templateUrl: 'views/common/modal_login.html',
         
         link: function (scope) {
             
@@ -62,7 +62,7 @@ Alpha.directive('modalLogin', function ($sce) {
 Alpha.directive('modalSignup', function ($sce) {
     return {
         restrict: 'A',
-        templateUrl: 'views/common/modal_signup.html.erb',
+        templateUrl: 'views/common/modal_signup.html',
         
         link: function (scope) {
             

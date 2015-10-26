@@ -26,34 +26,40 @@
               </div>
           </div>
           <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-            <input ng-model="form.name1" type="text" class="form-control" id="name1" placeholder="*Ingrese su primer nombre.">
+            <input ng-model="newUser.name1" type="text" class="form-control" id="name1" placeholder="*Ingrese su primer nombre.">
           </div>
           <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-            <input ng-model="form.name2" type="text" class="form-control" id="name2" placeholder="*Ingrese su segundo nombre.">
+            <input ng-model="newUser.name2" type="text" class="form-control" id="name2" placeholder="*Ingrese su segundo nombre.">
           </div>
           <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-            <input ng-model="form.lastname1" type="text" class="form-control" id="lastname1" placeholder="*Ingrese su primer apellido.">
+            <input ng-model="newUser.lastname1" type="text" class="form-control" id="lastname1" placeholder="*Ingrese su primer apellido.">
           </div>
           <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-            <input ng-model="form.lastname2" type="text" class="form-control" id="lastname2" placeholder="*Ingrese su segundo apellido.">
+            <input ng-model="newUser.lastname2" type="text" class="form-control" id="lastname2" placeholder="*Ingrese su segundo apellido.">
+          </div>
+          <div class="form-group col-lg-6 col-sm-6 col-xs-12">
+            <input ng-model="newUser.address" type="text" class="form-control" id="address" placeholder="*Ingrese su direccion">
+          </div>
+          <div class="form-group col-lg-6 col-sm-6 col-xs-12">
+            <input ng-model="newUser.phone" type="text" class="form-control" id="phone" placeholder="*Ingrese su telefono">
           </div>
           <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-            <input ng-model="form.email" type="text" class="form-control" id="email" placeholder="*Ingrese su correo electrónico.">
+            <input ng-model="newUser.email" type="text" class="form-control" id="email" placeholder="*Ingrese su correo electrónico.">
           </div>
           <div class="wid-100 inline-b">
             <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-              <input ng-model="form.password" type="password" class="form-control" id="password" placeholder="*Ingrese su contraseña">
+              <input ng-model="newUser.password" type="password" class="form-control" id="password" placeholder="*Ingrese su contraseña">
             </div>
             <div class="form-group col-lg-6 col-sm-6 col-xs-12">
-              <input ng-model="form.password_confirmation" type="password" class="form-control" id="password2" placeholder="*Repita su contraseña">
+              <input ng-model="newUser.confirm_password" type="password" class="form-control" id="password2" placeholder="*Repita su contraseña">
             </div>
           </div>
           <div class="col-md-12 col-sm-12">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <md-checkbox class="fc-W" ng-model="form.check2" aria-label="Checkbox cmt">Acepto <a class="underline fc-3 hover-fc-4" href="">Términos y condiciones</a> de ComunidadAlpha.com</md-checkbox>
+              <md-checkbox class="fc-W" ng-model="newUser.check" aria-label="Checkbox cmt">Acepto <a class="underline fc-3 hover-fc-4" href="">Términos y condiciones</a> de ComunidadAlpha.com</md-checkbox>
             </div>
           </div>
-          <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center-items margin-plus-10 padding-sm-10" ng-click="login()">
+          <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center-items margin-plus-10 padding-sm-10" ng-click="signUpNew()">
             <button class="wid-100 btn btn-primary color-4 bd-4">Registrarse</button>
           </div>
           <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-t-b-10 fs-15 margin-plus center-items">

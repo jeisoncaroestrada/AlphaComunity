@@ -118,7 +118,35 @@
 			  color: $color3!important;
 			  background-color: rgba(0, 0, 0, 0.5);
 			}
+
 	  	}
+
+		.navbar-toggle{
+
+    		border-color: #fff;
+
+    		&:hover{
+    			background-color: $color1;
+
+    			.icon-bar {
+				 	background-color: #fff!important;
+				}
+    		}
+
+    		&:focus{
+    			
+    			.icon-bar {
+				 	background-color: $color1;
+				}
+    		}
+
+			.icon-bar {
+			 	background-color: #fff;
+			}
+		} 
+
+		.navbar-toggle {
+}
 
 		
 	}

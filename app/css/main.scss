@@ -508,9 +508,9 @@
 
 	}
 
-	.navbar-default .navbar-toggle .icon-bar {
+	/* .navbar-default .navbar-toggle .icon-bar {
 			 background-color: #000000;
-	}
+	} */
 
 	.nav-bar-top{
 
@@ -811,6 +811,10 @@
 			background: rgba(0, 0, 0, 0.2);
 			border: 0px solid #ccc;
 			color: #fff;
+			::-webkit-input-placeholder { color: blue; } /* WebKit */
+:-moz-placeholder { color: blue; } /* Firefox 18- */
+::-moz-placeholder { color: blue; } /* Firefox 19+ */
+:-ms-input-placeholder { color: red; } /* IE 10+ */
 
 		}
 

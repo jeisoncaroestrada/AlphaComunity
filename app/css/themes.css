@@ -81,6 +81,21 @@
   color: #1a6f89 !important;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.theme1 .navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.theme1 .navbar-default .navbar-toggle:hover {
+  background-color: #47a6c7;
+}
+.theme1 .navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white !important;
+}
+.theme1 .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #47a6c7;
+}
+.theme1 .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
 .theme1 .btn-default .badge {
   background: #47a6c7;
 }
@@ -561,6 +576,21 @@
 .theme2 .navbar-default .navbar-nav .active > a, .theme2 .navbar-default .navbar-nav .navbar-default .navbar-nav > .active > a:focus, .theme2 .navbar-default .navbar-nav .navbar-default .navbar-nav > .active > a:hover {
   color: #0b5379 !important;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.theme2 .navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.theme2 .navbar-default .navbar-toggle:hover {
+  background-color: #e6344a;
+}
+.theme2 .navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white !important;
+}
+.theme2 .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #e6344a;
+}
+.theme2 .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 .theme2 .btn-default .badge {
   background: #e6344a;
@@ -1043,6 +1073,21 @@
   color: #d35400 !important;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.theme3 .navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.theme3 .navbar-default .navbar-toggle:hover {
+  background-color: #95a5a6;
+}
+.theme3 .navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white !important;
+}
+.theme3 .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #95a5a6;
+}
+.theme3 .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
 .theme3 .btn-default .badge {
   background: #95a5a6;
 }
@@ -1523,6 +1568,21 @@
 .theme4 .navbar-default .navbar-nav .active > a, .theme4 .navbar-default .navbar-nav .navbar-default .navbar-nav > .active > a:focus, .theme4 .navbar-default .navbar-nav .navbar-default .navbar-nav > .active > a:hover {
   color: #c0392b !important;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.theme4 .navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.theme4 .navbar-default .navbar-toggle:hover {
+  background-color: #9b59b6;
+}
+.theme4 .navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white !important;
+}
+.theme4 .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #9b59b6;
+}
+.theme4 .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 .theme4 .btn-default .badge {
   background: #9b59b6;

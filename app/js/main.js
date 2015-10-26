@@ -1,4 +1,4 @@
-var Alpha = angular.module("Alpha",["ui.router","ui.bootstrap","angularUtils.directives.dirPagination","ui.slimscroll","fox.scrollReveal","ngRoute","ngMap","ngMaterial","chart.js","smoothScroll"], function($interpolateProvider) {
+var Alpha = angular.module("Alpha",["ui.router","ui.bootstrap","angularUtils.directives.dirPagination","ui.slimscroll","fox.scrollReveal","ngRoute","ngMap","ngMaterial","chart.js","smoothScroll","ngResource"], function($interpolateProvider) {
 	$interpolateProvider.startSymbol('[[');
 	$interpolateProvider.endSymbol(']]');
 
@@ -14,7 +14,7 @@ var Alpha = angular.module("Alpha",["ui.router","ui.bootstrap","angularUtils.dir
         .state('home', {
             url: '/',
             controller:"HomeCtrl",
-			templateUrl: "views/home.html.erb"
+			templateUrl: "views/home.html"
         })
         .state('login', {
             url: '/login',
@@ -145,6 +145,11 @@ var Alpha = angular.module("Alpha",["ui.router","ui.bootstrap","angularUtils.dir
 
 .config(function(paginationTemplateProvider) {
     paginationTemplateProvider.setPath('views/common/dirPagination.tpl.html');
+})
+
+//factory para comunicar el Backend
+.factory('botiFactory', function ($resource) {
+	return $resource('http://localhost:3000/api/v1/users/:id');
 })
 
 
